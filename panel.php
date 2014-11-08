@@ -37,7 +37,7 @@ Morfy::factory()->addAction('theme_header', function () {
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="'.Morfy::$config['site_url'].'/plugins/panel/assets/css/panel.css" />
-		<script rel="javascript" src="'.Morfy::$config['site_url'].'/plugins/panel/assets/js/panel.js"></script>';
+	<script rel="javascript" src="'.Morfy::$config['site_url'].'/plugins/panel/assets/js/panel.js"></script>';
     // only load in panel
      if(trim(Morfy::factory()->getUrl(), '/') == 'panel') {
         echo $editor_styles;
