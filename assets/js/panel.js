@@ -128,8 +128,40 @@ window.addEventListener("load", function() {
 				'opacity':1,
 				'transition': 'all 1s ease'
 			});
+
 		});
 	})(jQuery);
+
+	(function(){
+		$('.toggle_menu').on('click',function(){
+			$(this).toggleClass('on');
+			if($(this).hasClass('on')){
+				$('.menu li a span').hide().parent().css('padding','10px');
+				$('#morfy_panel .sidebar').animate({width:'50px'});
+				$('.header,.footer').css('width','100%');
+				$('.main').animate({
+					'left':'53px',
+					'width':'96%',
+					'transition':'all 0.5s ease'
+				},500);
+				$(this).find('i').removeClass('fa-arrow-left').addClass('fa-arrow-right');
+			}else{
+				$('.menu li a span').parent().css('padding','10px 17px');
+				$('#morfy_panel .sidebar').animate({width:'197px'});
+				$('.header,.footer').css('width','100%');
+				$('.main').animate({
+					'left':'197px',
+					'width':'86%',
+					'transition':'all 0.5s ease'
+				},500,function(){
+					$('.menu li a span').fadeIn('fast');
+				});
+				$(this).find('i').removeClass('fa-arrow-right').addClass('fa-arrow-left');
+			}
+		});
+	})(jQuery);
+
+
 
 }, false);
 
