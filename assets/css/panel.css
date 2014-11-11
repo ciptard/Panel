@@ -47,6 +47,11 @@ body {
     overflow: hidden;
     background: #EBEEF0;
 }
+.p0 {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
 /*  
 *
 *
@@ -673,4 +678,35 @@ body {
 .radio-inline,.checkbox-inline {
     position: relative;
     display: block;
+}
+
+/*  
+*
+*
+*
+*
+*
+*
+*
+*        FILTER PAGES 
+*
+*
+*
+*
+*
+*
+*
+*/
+
+.search_pages{
+    height: 24px;
+    margin-right: 1em;
+    border: 1px solid #EAEAEA;
+    outline: none;
+    padding: 5px;
+    margin: 0;
+    display: block;
+    width: 150px;
+    border-radius: 4px;
+    margin-top: -3px;
 }
