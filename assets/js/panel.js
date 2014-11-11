@@ -95,6 +95,7 @@ function resizeEditor() {
     result.style.height = (content.offsetHeight - breadcrumb.offsetHeight - 216) + 'px';
 }
 
+
 // ONLOAD
 window.addEventListener("load", function() {
     // IF EDITOR
@@ -111,4 +112,27 @@ window.addEventListener("load", function() {
         // RUN FN
         imagePreview.run();
     }
+
+    // filter pages
+    (function(){
+	  	$('.search_pages').on('keyup', function(e) {
+			var filter_text = new RegExp(this.value, 'im');
+			$('.tumb-grid').css({
+				'opacity':0.2,
+				'transition': 'all 1s ease'
+			});
+			var items = jQuery('.tumb-grid').filter(function() {
+				return jQuery(this).html().match(filter_text);
+			});
+			items.css({
+				'opacity':1,
+				'transition': 'all 1s ease'
+			});
+		});
+	})(jQuery);
+
 }, false);
+
+
+
+
