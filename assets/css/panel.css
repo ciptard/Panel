@@ -48,8 +48,8 @@ body {
     background: #EBEEF0;
 }
 .p0 {
-	margin-right: 0px;
-	margin-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 /*  
@@ -316,6 +316,7 @@ body {
     height: 55px;
     background: #FFF;
     border-top: 1px solid #E0E3FF;
+    line-height: 55px;
 }
 #morfy_panel .header-title {
     display: inline-block;
@@ -330,44 +331,6 @@ body {
 @media (max-width: 700px) {
     #morfy_panel .wrapper, #morfy_panel .sidebar, #morfy_panel .main, #morfy_panel .content, #morfy_panel .header, #morfy_panel .footer {
         animation: ch3 1.5s 1 ease;
-    }
-}
-@media (max-width: 550px) {
-    #morfy_panel .wrapper, #morfy_panel .sidebar, #morfy_panel .main, #morfy_panel .content, #morfy_panel .header, #morfy_panel .footer {
-        animation: ch2 1.5s 1 ease;
-    }
-    #morfy_panel .wrapper {
-        min-width: 100%
-    }
-    #morfy_panel .sidebar {
-        top: 54px;
-        left: 0;
-        bottom: 0px;
-        width: 100%;
-        height: 56px;
-        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
-        background: #E74C3C;
-        color: #95A5A6;
-    }
-    #morfy_panel .main {
-        top: 115px;
-        left: 0;
-        height: calc(100% - 155px);
-        width: 100%;
-    }
-    #morfy_panel .content {
-        left: 0;
-        padding: 5px;
-        height: calc(100% - 15px);
-        width: calc(100% - 15px);
-    }
-    #morfy_panel .header, #morfy_panel .footer {
-        padding-left: 0;
-        margin-left: 0;
-        width: 100%;
-        min-width: 100%;
-        z-index: 999;
-        background: white;
     }
 }
 @keyframes ch1 {
@@ -539,6 +502,7 @@ body {
 #morfy_panel .panel_logo a img {
     display: block;
     width: 100%;
+    height: 100px;
 }
 #morfy_panel .alert_inner_success {
     position: fixed;
