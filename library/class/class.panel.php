@@ -449,6 +449,18 @@ class Panel {
         return $config; 
     }
 
+
+    /*
+    *   Get config settings
+    ^   Panel::settings['password']
+    */ 
+    public static function Settings($in){
+        $config = Panel::getContent('plugins/panel/library/config.php');
+        $result = json_decode($config,true);
+        return $result[$in]; 
+    }
+
+
     /*
     *   Get  Site url default panel
     */ 

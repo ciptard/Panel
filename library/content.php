@@ -18,7 +18,7 @@ Tags: '.$lang['Tags here'].'
 Template: '.$lang['index'].'
 
 --------
-                ';
+';
                 include_once('includes/add.php');
         		break;
 			case 'uploads':
@@ -43,7 +43,7 @@ Template: '.$lang['index'].'
         		break;
         }
     }else{
-        echo '<div class="breadcrumb"><i class="fa fa-home"></i> &nbsp;  '.$lang['Home'].'</div>';
+        echo '<div class="breadcrumb"><i class="fa fa-home"></i> &nbsp;  '.$lang['Home'].' <span class="pull-right"><input type="text" class="search_pages" placeholder="Filter pages"></span></div>';
         include 'includes/main.php';
     }
 

@@ -1,0 +1,1 @@
+{"Panel_lang":"en","Password":"demo","Secret_key_1":"12sdf3321a321asdfas","Secret_key_2":"4561dsf232gdfd1asdf3","Panel_Images":"full","Panel_Thumbnails":"tumb"}
